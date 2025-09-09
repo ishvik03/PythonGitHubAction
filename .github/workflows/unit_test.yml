@@ -47,7 +47,7 @@ jobs:
     - name : Check out code
     #Here we  copy (clones) your GitHub repository (the same code you see in your repo on GitHub)
     #into the job’s virtual machine (like the ubuntu-latest runner).
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
 
     # Step 2: Setup Python
