@@ -9,6 +9,4 @@ def test_add():
 
 def test_subtract():
     assert subtract(1, 2) == -1
-    assert subtract(5, 6) == 0
-    assert subtract(1, 2) == 1
-    assert subtract(5, 6) == 0
+    assert subtract(5, 6) == -1
