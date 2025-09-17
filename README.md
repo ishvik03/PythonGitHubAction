@@ -1,8 +1,9 @@
-Learning CI/CD with GitHub Actions
+# Learning CI/CD with GitHub Actions
 
 This project represents my first hands-on experience with CI/CD pipelines using GitHub Actions. I built a small Python project with math operations and integrated it with an automated testing workflow, allowing me to connect the theory of CI/CD with practical implementation.
 
-Understanding CI/CD
+
+## Understanding CI/CD  <!-- second level -->
 
 CI/CD (Continuous Integration / Continuous Deployment) is a software development practice that automates how code is integrated, tested, and deployed.
 
@@ -10,7 +11,9 @@ Continuous Integration (CI): Ensures new code changes are automatically built an
 
 Continuous Deployment (CD): Ensures that tested and verified code is consistently deployed without manual intervention.
 
-Why this matters:
+
+### Why this matters: <!-- third level -->
+
 
 Improves reliability by identifying problems before they reach production.
 
@@ -18,7 +21,9 @@ Reduces manual, repetitive work through automation.
 
 Speeds up the release cycle, enabling teams to deliver software more quickly and safely.
 
-GitHub Actions in this context:
+
+### GitHub Actions in this context: <!-- third level -->
+
 GitHub Actions provides a way to automate workflows directly within GitHub using YAML configuration files. A workflow defines:
 
 Triggers (for example, on every push or pull request).
@@ -27,19 +32,21 @@ Jobs and steps (such as setting up the environment, installing dependencies, lin
 
 Execution environments (such as Ubuntu runners to simulate builds).
 
-Project Implementation
+
+## Project Implementation <!-- second level -->
 
 I implemented these concepts in a simple Python project as follows:
 
-Core Code
+### Core Code <!-- third level -->
 
 Created a file math_operations.py containing two basic functions: add() and subtract().
 
-Unit Tests
+### Unit Tests <!-- third level -->
 
 Wrote unit tests using pytest to validate both functions.
 
-CI/CD Workflow
+
+### CI/CD Wokflow <!-- third level -->
 
 Built a GitHub Actions workflow (.github/workflows/python-ci.yml) to:
 
@@ -53,7 +60,8 @@ Perform linting checks for code quality.
 
 Run automated unit tests.
 
-GitHub Actions Workflow Highlights
+
+## GitHub Actions Workflow Highlights <!-- second level -->
 
 The workflow file has several important features:
 
@@ -100,7 +108,8 @@ jobs:
       - name: Test with pytest
         run: PYTHONPATH=. pytest
 
-Learnings and Takeaways
+
+## Learnings and Takeaways <!-- second level -->
 
 From this project, I was able to:
 
@@ -110,8 +119,11 @@ Learn how to design an automated workflow with GitHub Actions to execute unit te
 
 Gain insight into how CI/CD creates a repeatable, reliable, and efficient development process.
 
-Big Picture Insight:
+
+## Big Picture Insight:<!-- second level -->
+
 After learning and applying CI/CD through GitHub Actions, I developed a clearer understanding of how development, deployment, integration, and maintenance of code are managed in production environments. This project reinforced why these practices are critical for building efficient and scalable workflows.
 
 This project may be simple in scope, but it gave me a strong foundation in CI/CD. More importantly, it showed me how automation links engineering practices directly to real-world software reliability and business value.
+
 
